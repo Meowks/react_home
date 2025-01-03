@@ -9,11 +9,7 @@ const PageThree = () => {
   const navigate = useNavigate()
   const [answer, setAnswer] = useState("");
 
-  const hendleClick = (() => {
-    if (!answer) {
-      navigate("/page-four")
-    }
-  });
+  
   return (
     <>
       <AppInput
@@ -24,7 +20,7 @@ const PageThree = () => {
         buttonText={"Далее"}
         buttonType={"button"}
         isDisabled={false}
-        buttonClick={useNavigate("/page-four")}
+        buttonClick={()=>navigate("/page-four")}
       />
     </>
 
