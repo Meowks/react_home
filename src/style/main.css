@@ -9,7 +9,9 @@ body{
   text-align: center;
   display: flex;
   justify-content: center;
-
+}
+body._light{
+  background-color: azure;
 }
 #button{
   margin: 50px auto ;
@@ -28,4 +30,14 @@ body{
   border-radius: 8px;
   margin: 50px;
   display: block;
+}
+.container {
+  padding: 0 45px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container._dark{
+  background-color: #22222a;
 }
